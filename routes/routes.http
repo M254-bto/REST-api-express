@@ -1,0 +1,27 @@
+GET http://localhost:4000/subscribers/
+
+###
+
+
+POST http://localhost:4000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Mike",
+    "subscribedChannel":"TalkFCB"
+}
+
+
+###
+DELETE http://localhost:4000/subscribers/62320291df8fa72881b8af64
+
+
+###
+
+PATCH http://localhost:4000/subscribers/6231fa390ef20a613e7f7e7e
+Content-Type: application/json
+
+{
+    "subscribedChannel": "MoreTalkFCB",
+    "name": "Mike"
+}
